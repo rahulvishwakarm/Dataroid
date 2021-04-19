@@ -6,7 +6,7 @@ function Header() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light sticky">
                 <div className="container-fluid">
-                    <span className="navbar-brand" ><b>Dataroid</b></span>
+                    <span className="navbar-brand" ><b>DataRoid</b></span>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -30,12 +30,14 @@ function Header() {
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="www.google.com">
-                                Resourse
+                                Services
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><button className="dropdown-item" >Resource 1</button></li>
-                                <li><button className="dropdown-item" >Resource 2</button></li>
-                                <li><button className="dropdown-item" >Resource 3</button></li>
+                                <li><button className="dropdown-item" >B2B Database</button></li>
+                                <li><button className="dropdown-item" >Data Mining</button></li>
+                                <li><button className="dropdown-item" >Data Wrangling</button></li>
+                                <li><button className="dropdown-item" >Data Research</button></li>
+                                <li><button className="dropdown-item" >Master Database</button></li>
                             </ul>
                         </li>
                         </ul>
