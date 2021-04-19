@@ -4,16 +4,18 @@ import dataprovider from '../../img/dataprovider-removebg-preview.png';
 
 function BannerDisplay() {
     return (
-        <div className="Contain">
-            <img src={dataprovider} alt="dataprovider" className="Contain-left"/>
-            <div className="Contain-right">
-                <h1>B2B Contact Data</h1>
-                <div className="B2B-Description">
-                    B2B contact data refers to the contact information of decision makers in companies. 
-                    Business contact lists are mostly used by marketers and sales teams e.g. in lead enrichment and account based marketing. 
-                    Datarade helps you find the right B2B contact databases and providers <span className="learnmore"><a href="www.google.com">Learn more →</a></span>
-                </div>
-            </div>            
+        <div className="PaddingOfSticky">
+            <div className="Contain">
+                <img src={dataprovider} alt="dataprovider" className="Contain-left"/>
+                <div className="Contain-right">
+                    <h1>B2B Contact Data</h1>
+                    <div className="B2B-Description">
+                        B2B contact data refers to the contact information of decision makers in companies. 
+                        Business contact lists are mostly used by marketers and sales teams e.g. in lead enrichment and account based marketing. 
+                        Datarade helps you find the right B2B contact databases and providers <span className="learnmore"><a href="www.google.com">Learn more →</a></span>
+                    </div>
+                </div>            
+            </div>
         </div>
     )
 }

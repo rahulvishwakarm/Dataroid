@@ -1,3 +1,9 @@
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;;
+}
+
 #navbarSupportedContent{
     display: flex;
     justify-content: space-evenly;
