@@ -17,16 +17,16 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="www.google.com">Home</a>
+                            <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="www.google.com">About Us</a>
+                            <a className="nav-link active" aria-current="page" href="/aboutUs">About Us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="www.google.com">Data Story</a>
+                            <a className="nav-link active" aria-current="page" href="/datastory">Data Story</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="www.google.com">Sales</a>
+                            <a className="nav-link active" aria-current="page" href="/sales">Sales</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="www.google.com">
