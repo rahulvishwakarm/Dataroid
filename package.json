@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start":"node server.js",
-    "server":"nodemon server.js"
+    "server":"nodemon server.js",
+    "dataroidui":"cd dataroidui && npm start",
+    "dev":"concurrently \"npm run server\" \"npm run dataroidui\""
   },
   "author": "",
   "license": "ISC",
