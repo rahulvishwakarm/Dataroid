@@ -1,4 +1,5 @@
 import BannerDisplay from "./utils/BannerDisplay/BannerDisplay";
+import Classification from "./utils/Classification/Classification";
 import Header from "./utils/Header/Header";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
         <Header/>
         <BannerDisplay/>
+        <Classification/>
     </div>
   );
 }

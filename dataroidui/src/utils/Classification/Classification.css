@@ -1,0 +1,26 @@
+
+
+.col-md-12{
+    text-align: center;
+}
+
+body{
+    background-color: #cceeff;
+}
+
+.Container{
+    align-items: center;
+    display: inline-flex;
+}
+
+.ContainerNew{
+    margin-left: 80px;
+}
+
+.Classification-header{
+    padding-top: 30px;
+}
+
+.Classification-content{
+    padding-top: 10px;
+}

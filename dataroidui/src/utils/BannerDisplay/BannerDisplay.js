@@ -1,6 +1,6 @@
 import React from 'react';
 import './BannerDisplay.css';
-import dataprovider from '../img/dataprovider-removebg-preview.png';
+import dataprovider from '../../img/dataprovider-removebg-preview.png';
 
 function BannerDisplay() {
     return (
@@ -18,4 +18,4 @@ function BannerDisplay() {
     )
 }
 
-export default BannerDisplay
+export default BannerDisplay;
