@@ -43,11 +43,11 @@ function Header() {
                         </li>
                         </ul>
                     </div>
-                    <Link to="/"><button className="btn btn-primary" type="submit">Login</button></Link>
+                    <button className="btn btn-primary" type="submit">Login</button>
                 </div>
             </nav>
         </div>
     )
 }
 
-export default Header
+export default Header;

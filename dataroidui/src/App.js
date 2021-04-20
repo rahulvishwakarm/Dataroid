@@ -1,6 +1,7 @@
 import BannerDisplay from "./utils/BannerDisplay/BannerDisplay";
 import Classification from "./utils/Classification/Classification";
 import Header from "./utils/Header/Header";
+import VerifiedData from "./utils/VerifiedData/VerifiedData";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Header/>
         <BannerDisplay/>
         <Classification/>
+        <VerifiedData/> 
     </div>
   );
 }
