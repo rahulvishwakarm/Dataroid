@@ -8,3 +8,8 @@
     text-align: center;
     color: #2c99e4;
 }
+
+.row1-widget{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './VerifiedData.css';
+import VerifiedDataWidget from './VerifiedDataWidget';
 
 function VerifiedData() {
     return (
@@ -11,6 +12,11 @@ function VerifiedData() {
                 <p>
                     We Deliver Research and Verified Information for B2B Contact Database with their Decision Maker details
                 </p>
+            </div>
+            <div className="row1-widget">
+                <VerifiedDataWidget/>
+                <VerifiedDataWidget/>
+                <VerifiedDataWidget/>
             </div>
         </div>
     )

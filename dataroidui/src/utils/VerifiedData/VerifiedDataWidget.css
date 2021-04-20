@@ -1,0 +1,15 @@
+.widget-container{
+    border: 1px solid #004dcf;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.widget-catgeory-list {
+    padding-top: 10px;
+}
+
