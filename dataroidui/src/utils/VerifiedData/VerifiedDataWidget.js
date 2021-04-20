@@ -3,6 +3,14 @@ import IndianCompaniesDatabase from '../../img/Indian-Companies-Database.png';
 import './VerifiedDataWidget.css';
 import { AiOutlineApi } from "react-icons/ai";
 
+let categortlist1 = [
+    {category1:"IT / ITES Companies Database"},
+    {category1:"Manufacturing Companies Database"},
+    {category1:"BFSI Companies Database"},
+    {category1:"Pharmaceutical Companies Database"},
+    {category1:"Chemical Companies Database"}
+]
+
 function VerifiedDataWidget() {
     return (
         <div className="col-3  widget-container">
@@ -11,26 +19,14 @@ function VerifiedDataWidget() {
             </div>
             <div className="widget-catgeory-list">
                 <ul className="list-group categ">
-                    <li>
-                        <AiOutlineApi/>
-                        <span>IT / ITES Companies Database</span>
-                    </li>
-                    <li>
-                        <AiOutlineApi/>
-                        <span>Manufacturing Companies Database</span>
-                    </li>
-                    <li>
-                        <AiOutlineApi/>
-                        <span>BFSI Companies Database</span>
-                    </li>
-                    <li>
-                        <AiOutlineApi/>
-                        <span>Pharmaceutical Companies Database</span>
-                    </li>
-                    <li>
-                        <AiOutlineApi/>
-                        <span>Chemical Companies Database</span>
-                    </li>  
+                    {
+                        categortlist1.map(item => (
+                            <li key={item.id}>
+                                <AiOutlineApi/>
+                                <span>{item.category1}</span>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         </div>
