@@ -11,7 +11,9 @@ let categortlist1 = [
     {category1:"Chemical Companies Database"}
 ]
 
-function VerifiedDataWidget() {
+function VerifiedDataWidget(props) {
+    const test = props.catt
+    console.log(test)
     return (
         <div className="col-3  widget-container">
             <div className="widget-category-icon">
@@ -19,14 +21,14 @@ function VerifiedDataWidget() {
             </div>
             <div className="widget-catgeory-list">
                 <ul className="list-group categ">
-                    {
-                        categortlist1.map(item => (
-                            <li key={item.id}>
-                                <AiOutlineApi/>
-                                <span>{item.category1}</span>
-                            </li>
-                        ))
-                    }
+                        {
+                            categortlist1.map(item => (
+                                <li key={item.id}>
+                                    <AiOutlineApi/>
+                                    <span>{item.category1}</span>
+                                </li>
+                            ))
+                        }
                 </ul>
             </div>
         </div>

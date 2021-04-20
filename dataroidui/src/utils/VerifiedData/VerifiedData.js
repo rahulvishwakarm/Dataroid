@@ -3,6 +3,7 @@ import './VerifiedData.css';
 import VerifiedDataWidget from './VerifiedDataWidget';
 
 function VerifiedData() {
+    const cat1 = ["IT / ITES Companies Database","Manufacturing Companies Database","BFSI Companies Database","Pharmaceutical Companies Database","Chemical Companies Database"]
     return (
         <div>
             <div className="B2b-category-header">
@@ -15,7 +16,7 @@ function VerifiedData() {
             </div>
             <div className="row1-widget">
                 <VerifiedDataWidget/>
-                <VerifiedDataWidget/>
+                <VerifiedDataWidget />
                 <VerifiedDataWidget/>
             </div>
         </div>
