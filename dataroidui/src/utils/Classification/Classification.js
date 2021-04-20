@@ -1,10 +1,10 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import './Classification.css';
 import ClassificationImage from '../../img/company_size_stats.jpg';
 
 function Classification() {
     return (
-        <div className="classification">
+        <React.Fragment>
             <div className="col-md-12 Classification-header">
                 <h2 className="text-black">Easiest Way To Reach The Right Target Customers</h2>
                 <p className="text-black-m-top-10">Filter data by <i>Company Name,Location,Designation,Department etc.</i></p>
@@ -25,7 +25,7 @@ function Classification() {
                     </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 
