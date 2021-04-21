@@ -12,4 +12,9 @@
 .row1-widget{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.row1-widget span {
+    padding-bottom: 20px;
 }
