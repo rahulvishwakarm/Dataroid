@@ -6,7 +6,7 @@
 
 .B2b-sub-category-header{
     text-align: center;
-    color: #2c99e4;
+    color:blue;
 }
 
 .row1-widget{
@@ -17,4 +17,12 @@
 
 .row1-widget span {
     padding-bottom: 20px;
+}
+
+.TypeOfDataBase{
+    background-color: #b3d9ff;
+}
+
+.B2b-category-header{
+    padding-top: 20px;
 }
