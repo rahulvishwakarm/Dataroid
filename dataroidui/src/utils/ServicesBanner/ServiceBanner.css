@@ -1,0 +1,17 @@
+.servicebanner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.serviceBannerBox{
+    border: 1px solid black;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex: 1 0 30%;
+    margin: 5px;
+}
+
+.service-banner-description {
+    flex-wrap: wrap;
+}

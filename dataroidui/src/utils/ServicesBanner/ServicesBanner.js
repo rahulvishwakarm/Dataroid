@@ -1,4 +1,5 @@
 import React from 'react';
+import './ServiceBanner.css';
 import serImg1 from '../../img/B2B-Database-Manager.png';
 import serImg2 from '../../img/B2B-Researched-Database.png';
 import serImg3 from '../../img/B2B-Cleaned-Database.png';
@@ -6,7 +7,7 @@ import serImg4 from '../../img/Email-B2B-List.png';
 import serImg5 from '../../img/Corporate-Master-Database.png';
 
 const servicesValue =[
-    {serimg:serImg1,serHead:"B2B Database",serDesc:"We helps customers to target high quality B2B database."},
+    {serimg:serImg1,serHead:"B2B Database",serDesc:"B2B database is a log of all the data your marketing team has about potential clients and customers, We helps customers to target high quality B2B database."},
     {serimg:serImg2,serHead:"Data Research",serDesc:"The data gathered through research will help customers for their marketing Strategy & planning."},
     {serimg:serImg3,serHead:"Data Cleansing",serDesc:"Data Cleansing plays an important role in removing inaccurate data, which will help the marketers to improve their marketing campaigns."},
     {serimg:serImg4,serHead:"Email Database",serDesc:"Email is the most successful and easy way of communication across the business world. It is cost-effective and helps organizations in reducing the cost spent on marketing efforts."},
@@ -18,7 +19,7 @@ function ServicesBanner() {
         <div className="servicebanner">
             {
                 servicesValue.map(serv => (
-                        <div key={serv.id}>
+                        <div key={serv.id} className="serviceBannerBox">
                             <div className="service-banner-icon">
                                 <img src={serv.serimg} alt={serv.serHead} height="50" width="50"/>
                             </div>
