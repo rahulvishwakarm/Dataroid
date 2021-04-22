@@ -34,7 +34,6 @@ function VerifiedData() {
                 <span><VerifiedDataWidget img={image[6]} tst={cat4}/></span>
                 <span><VerifiedDataWidget img={image[4]} tst={cat5}/></span>
                 <span><VerifiedDataWidget img={image[5]} tst={cat6}/></span>
-                <span><VerifiedDataWidget img={image[5]} tst={cat6}/></span>
             </div>
         </div>
     )

@@ -9,8 +9,9 @@
 
 .row1-widget{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-left: 50px;
 }
 
 .row1-widget span {

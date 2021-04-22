@@ -15,7 +15,7 @@ function VerifiedDataWidget(props) {
                             props.tst.map(item => (
                                 <li key={item.id}>
                                     <AiOutlineApi/>
-                                    <span>{item.category}</span>
+                                    <span className="spacing-database">{item.category}</span>
                                 </li>
                             ))
                         }
