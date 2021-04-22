@@ -16,22 +16,27 @@ const servicesValue =[
 
 function ServicesBanner() {
     return (
-        <div className="servicebanner">
-            {
-                servicesValue.map(serv => (
-                        <div key={serv.id} className="serviceBannerBox">
-                            <div className="service-banner-icon">
-                                <img src={serv.serimg} alt={serv.serHead} height="50" width="50"/>
+        <div className="ServiceBannerMain">
+            <div className="ServiceMainHeading">
+                <h1>Services</h1>
+            </div>
+            <div className="servicebanner">
+                {
+                    servicesValue.map(serv => (
+                            <div key={serv.id} className="serviceBannerBox">
+                                <div className="service-banner-icon">
+                                    <img src={serv.serimg} alt={serv.serHead} height="50" width="50"/>
+                                </div>
+                                <div className="service-banner-header">
+                                    <h3>{serv.serHead}</h3>
+                                </div>
+                                <div className="service-banner-description">
+                                    <p>{serv.serDesc}</p>
+                                </div>
                             </div>
-                            <div className="service-banner-header">
-                                <h2>{serv.serHead}</h2>
-                            </div>
-                            <div className="service-banner-description">
-                                <p>{serv.serDesc}</p>
-                            </div>
-                        </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
     )
 }
