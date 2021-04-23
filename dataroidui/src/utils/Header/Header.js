@@ -1,5 +1,6 @@
 import React from 'react';
 import Login from '../Login/Login';
+import LoginForm from '../Login/LoginForm';
 import './Header.css';
 
 class Header extends React.Component {
@@ -63,8 +64,7 @@ class Header extends React.Component {
                         </div>
                         <div>
                             <Login show={this.state.show} handleClose={this.handleClickLoginClose}>
-                                <p>Login From</p>
-                                <p>Form Here</p>
+                                <LoginForm/>
                                 <button onClick={this.handleClickLoginClose}>Close</button>
                             </Login>
                             <button className="btn btn-primary" type="button" onClick={this.handleClickLogin}>
