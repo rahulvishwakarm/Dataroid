@@ -12,16 +12,20 @@ function App() {
       <Router>
         <div className="App">
           <Header/>
-            <Route path="/">
-              <BannerDisplay/>
-              <Classification/>
-              <VerifiedData/>
-              <ServicesBanner/>
-            </Route>
+                <Switch>
 
-            <Route path="/aboutUs">
-              <AboutUsMain/>
-            </Route>
+                    <Route path="/aboutUs">
+                      <AboutUsMain/>
+                    </Route>
+
+                    <Route path="/">
+                      <BannerDisplay/>
+                      <Classification/>
+                      <VerifiedData/>
+                      <ServicesBanner/>
+                    </Route>
+                    
+              </Switch>
           <FooterPage/>
       </div>
     </Router>

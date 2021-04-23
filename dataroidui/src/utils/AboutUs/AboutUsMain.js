@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './AboutUsMain.css';
 
 function AboutUsMain() {
     return (
         <div>
-            About Us
+            <h1>About Us</h1>
         </div>
     )
 }
