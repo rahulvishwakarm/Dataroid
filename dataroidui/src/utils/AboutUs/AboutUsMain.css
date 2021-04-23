@@ -1,3 +1,13 @@
-body{
-    padding-top: 65px;
+.AboutUs-Heading{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
+}
+
+.AboutDescription {
+    margin-left: 150px;
+    margin-right: 150px;
 }
