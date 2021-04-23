@@ -6,6 +6,7 @@ import ServicesBanner from "./utils/ServicesBanner/ServicesBanner";
 import VerifiedData from "./utils/VerifiedData/VerifiedData";
 import {BrowserRouter as Router,Switch, Route,Link} from 'react-router-dom'
 import AboutUsMain from "./utils/AboutUs/AboutUsMain";
+import DataStoryMain from "./utils/Data Story/DataStoryMain";
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
                     <Route path="/aboutUs">
                       <AboutUsMain/>
                     </Route>
-
+                    
+                    <Route path="/datastory">
+                      <DataStoryMain/>
+                    </Route>
+                    
                     <Route path="/">
                       <BannerDisplay/>
                       <Classification/>
