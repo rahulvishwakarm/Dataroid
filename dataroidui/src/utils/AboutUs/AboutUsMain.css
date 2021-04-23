@@ -1,6 +1,6 @@
 .AboutUs-Heading{
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 15px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -10,4 +10,18 @@
 .AboutDescription {
     margin-left: 150px;
     margin-right: 150px;
+}
+
+.Container-mission{
+    border: 1px solid #b3d9ff;
+    padding: 20px 40px;
+    border-radius: 6px;
+}
+
+.Mission-Container{
+    display: flex;
+    flex: 1  21%;
+    margin-left: 150px;
+    margin-right: 150px;
+    
 }
