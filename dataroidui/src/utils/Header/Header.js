@@ -1,28 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LoginForm from '../Login/LoginForm';
 import './Header.css';
 
 class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            show:false
-        }
-        this.handleClickLogin=this.handleClickLogin.bind(this);
-        this.handleClickLoginClose=this.handleClickLoginClose.bind(this);
-    }
-
-    handleClickLogin = () => {
-        this.setState({show:true});
-    }
-
-    handleClickLoginClose = () => {
-        this.setState({show:false});
-    }
-
     render(){
-
-        const show = this.state.show;
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light sticky">
@@ -64,9 +46,11 @@ class Header extends React.Component {
                             </ul>
                         </div>
                         <div className="MainClassLogin">
-                            <button className="btn btn-primary loginbutton" type="button" onClick={this.handleClickLogin}>
-                                Login
-                            </button>
+                            <Link to="/Login">
+                                <button className="btn btn-primary loginbutton" type="button">
+                                    Login
+                                </button>
+                            </Link>
                         </div>
                         
                     </div>

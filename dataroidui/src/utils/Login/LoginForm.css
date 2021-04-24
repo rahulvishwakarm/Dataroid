@@ -1,32 +1,3 @@
-.mainheadtext{
-    color: whitesmoke;
-    font-size:30px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.LoginFormMain {
-    border: 1px solid black;
-    float:left;
-    padding: 60px 40px 80px 30px;
-    background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
-    color: whitesmoke;
-}
-.passw{
-    margin-left: 16px;
-}
-
-.email{
-    margin-left: 5px;
-}
-
-.btnlogin {
-    padding-top: 15px;
-    margin-left: 100px;
-    border: none;
-}
-
-.btnlogin button{
-    border: none;
-    padding: 5px 10px;
+.LoginFormMain{
+    margin-top: 80px;
 }

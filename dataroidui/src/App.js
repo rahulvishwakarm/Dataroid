@@ -7,6 +7,7 @@ import VerifiedData from "./utils/VerifiedData/VerifiedData";
 import {BrowserRouter as Router,Switch, Route,Link} from 'react-router-dom'
 import AboutUsMain from "./utils/AboutUs/AboutUsMain";
 import DataStoryMain from "./utils/Data Story/DataStoryMain";
+import LoginForm from "./utils/Login/LoginForm";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
                     
                     <Route path="/datastory">
                       <DataStoryMain/>
+                    </Route>
+
+                    <Route path="/Login">
+                      <LoginForm/>
                     </Route>
                     
                     <Route path="/">
