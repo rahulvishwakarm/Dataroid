@@ -1,24 +1,44 @@
-import React from 'react'
+import React,{useState} from 'react';
+import {useHistory} from 'react-router-dom';
 
-function LoginForm() {  
+function LoginForm(props) {  
+    const history = useHistory();
+    const [username,setUserName] = useState("");
+    const [pass,setPassword] = useState("");
 
-        return (
-            <div>
-                <form onSubmit="/">
-                    <div> 
-                        <label for="email">User Name</label>
-                        <input type="email" placeholder="Enter Email" className="email" required/>
-                    </div>
-                    <div>
-                        <label for="pass">Password</label>
-                        <input type="password" placeholder="Enter Email" className="pass" required/>
-                    </div>
-                    <div>
-                        <button type="button" >Login</button>
-                    </div>
-                </form>
-            </div>
-        )
+    const logIn = (event) => {
+        if(username!="") {
+            if(pass!="") {
+                alert("Sign In Sucessfull");
+                console.log(username,pass);
+                history.push('/');
+                window.location.reload();
+            }
+            else{
+                alert("Please enter paswword");
+            }
+        }
+        else {
+            alert("Please Enter Username")
+        }
+    }
+            return (
+                <div>
+                    <form onSubmit="/">
+                        <div> 
+                            <label for="email">User Name</label>
+                            <input type="email" placeholder="Enter Email" value={username} className="email" onChange={e=>setUserName(e.target.value)}/>
+                        </div>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" placeholder="Enter Email" value={pass} className="passw" onChange={e=>setPassword(e.target.value)}/>
+                        </div>
+                        <div>
+                            <button type="button" onClick={logIn} >Login</button>
+                        </div>
+                    </form>
+                </div>
+            )
 }
 
 export default LoginForm

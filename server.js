@@ -18,19 +18,19 @@ connection.connect(function(err) {
 
 app.use(cors());
 
-app.get('/posts', (req, res) => {
+app.get('/employee', (req, res) => {
     connection.query("SELECT * FROM user_details where username like '%san%' and  user_id%3=0;", (err, results, fields) => {
         if(err) throw err;
         res.send(results);
-        console.log("Data fetched Successfully")
+        console.log("Employee fetched Successfully")
     });
     });
 
-app.get('/newposts', (req, res) => {
+app.get('/intern_employee', (req, res) => {
     connection.query("SELECT * FROM user_details where user_id between 10 and 20;", (err, results, fields) => {
         if(err) throw err;
         res.send(results);
-        console.log("Data fetched Successfully")
+        console.log("Intern Employee fetched Successfully");
     });
     });
 

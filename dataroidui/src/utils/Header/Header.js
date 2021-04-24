@@ -4,8 +4,8 @@ import LoginForm from '../Login/LoginForm';
 import './Header.css';
 
 class Header extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             show:false
         }
@@ -22,6 +22,8 @@ class Header extends React.Component {
     }
 
     render(){
+
+        const show = this.state.show;
         return (
             <div>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light sticky">
@@ -64,7 +66,7 @@ class Header extends React.Component {
                         </div>
                         <div>
                             <Login show={this.state.show} handleClose={this.handleClickLoginClose}>
-                                <LoginForm/>
+                                <LoginForm show={show}/>
                                 <button onClick={this.handleClickLoginClose}>Close</button>
                             </Login>
                             <button className="btn btn-primary" type="button" onClick={this.handleClickLogin}>
