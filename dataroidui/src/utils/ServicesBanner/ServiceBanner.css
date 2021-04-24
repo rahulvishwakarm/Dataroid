@@ -1,6 +1,6 @@
 .ServiceBannerMain{
-    border: 1px solid black;
-    margin: 5px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .servicebanner {
