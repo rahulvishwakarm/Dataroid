@@ -10,19 +10,13 @@ function LoginForm() {
     
     const signIn = e =>{
         if(email!="" ){
-            if(password!=""){
-                e.preventDefault(); 
-        auth
-            .signInWithEmailAndPassword(email,password)
-            .then(auth =>{
+            if(password!="") {
+                e.preventDefault();
                 history.push('/')
                 alert("Sign In Succesfull");
-            })
-            .catch(error => alert(error.message))
             }else{
                 alert("Please enter password");
             }
-            
         }
         else{
             alert("Please enter username!!");
@@ -32,34 +26,18 @@ function LoginForm() {
 
     const register = e =>{
         if(email!="" & password!=""){
-            e.preventDefault(); 
-
-        auth
-            .createUserWithEmailAndPassword(email,password)
-            .then((auth)=>{
-                //it succesfully created newv user with ermail and password
-                console.log(auth);
-                if(auth){
+                    e.preventDefault();
                     history.push('/')
                     alert("Sign up Succesfull");
                 }
-            })
-            .catch(error => alert(error.message))
-        }
         else{
             alert("Please enter username and password")
         }
-        
     }
 
     const forgetpassword = e =>{
-
         if(email!==""){
-            auth.sendPasswordResetEmail(email).then(function() {
-                alert("Please check your Inbox "+email+" to reset password");
-            }).catch(function(error) {
-                alert("Error in reseting password"+error);
-            });
+            
         }else{
             alert("Please Enter Username!")
         }
@@ -78,8 +56,7 @@ function LoginForm() {
                                         <Button className="forgetpassword" color="danger" onClick={forgetpassword}>Forget Password</Button>
                                 </div><br></br>
                                 <div className="container1" >
-                                    <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p>
-                                    <h5 >----------------New to Dataroid----------------</h5>
+                                    <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p> 
                                     <Button className="register" color="warning" onClick={register}>Create Your Dataroid Account</Button>
                                 </div>
                     </form>
