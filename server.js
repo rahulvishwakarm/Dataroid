@@ -1,10 +1,30 @@
 const express = require('express');
 const app = express()
-const port = 5000
+const cors = require('cors')
+const port =5000
+const mysql = require('mysql');
 
-app.get('/test',(req,res) => {
-    res.send('Hello World')
-})
+const connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "1945",
+    database: "biprac" 
+});
+
+connection.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+});
+
+app.use(cors());
+
+app.get('/posts', (req, res) => {
+    connection.query("SELECT * FROM user_details where username like '%ra%' and  user_id%3=0;", (err, results, fields) => {
+        if(err) throw err;
+        res.send(results);
+        console.log("Data fetched Successfully")
+    });
+    });
 
 app.listen(port, () => {
     console.log(`App running ar http://localhost:${port}`)
