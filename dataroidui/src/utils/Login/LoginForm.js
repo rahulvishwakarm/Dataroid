@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import {useHistory} from 'react-router-dom';
+import './LoginForm.css';
 
 function LoginForm(props) {  
     const history = useHistory();
@@ -23,8 +24,9 @@ function LoginForm(props) {
         }
     }
             return (
-                <div>
+                <div className="LoginFormMain">
                     <form onSubmit="/">
+                        <div className="mainheadtext">DataRoid</div>
                         <div> 
                             <label for="email">User Name</label>
                             <input type="email" placeholder="Enter Email" value={username} className="email" onChange={e=>setUserName(e.target.value)}/>
@@ -33,7 +35,7 @@ function LoginForm(props) {
                             <label for="pass">Password</label>
                             <input type="password" placeholder="Enter Email" value={pass} className="passw" onChange={e=>setPassword(e.target.value)}/>
                         </div>
-                        <div>
+                        <div className="btnlogin">
                             <button type="button" onClick={logIn} >Login</button>
                         </div>
                     </form>

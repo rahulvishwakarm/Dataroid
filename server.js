@@ -32,7 +32,9 @@ app.get('/intern_employee', (req, res) => {
         res.send(results);
         console.log("Intern Employee fetched Successfully");
     });
-    });
+});
+
+
 
 app.listen(port, () => {
     console.log(`Application running ar http://localhost:${port}`)

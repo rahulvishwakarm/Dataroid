@@ -1,5 +1,4 @@
 import React from 'react';
-import Login from '../Login/Login';
 import LoginForm from '../Login/LoginForm';
 import './Header.css';
 
@@ -64,12 +63,8 @@ class Header extends React.Component {
                             </li>
                             </ul>
                         </div>
-                        <div>
-                            <Login show={this.state.show} handleClose={this.handleClickLoginClose}>
-                                <LoginForm show={show}/>
-                                <button onClick={this.handleClickLoginClose}>Close</button>
-                            </Login>
-                            <button className="btn btn-primary" type="button" onClick={this.handleClickLogin}>
+                        <div className="MainClassLogin">
+                            <button className="btn btn-primary loginbutton" type="button" onClick={this.handleClickLogin}>
                                 Login
                             </button>
                         </div>
