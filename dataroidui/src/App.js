@@ -30,7 +30,6 @@ function App() {
                     
                     <Route path="/">
                       <BannerDisplay/>
-                      <Classification/>
                       <VerifiedData/>
                       <ServicesBanner/>
                     </Route>

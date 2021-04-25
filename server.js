@@ -19,7 +19,7 @@ connection.connect(function(err) {
 app.use(cors());
 
 app.get('/employee', (req, res) => {
-    connection.query("SELECT * FROM user_details where username like '%san%' and  user_id%3=0;", (err, results, fields) => {
+    connection.query("SELECT * FROM user_details where username like '%san%';", (err, results, fields) => {
         if(err) throw err;
         res.send(results);
         console.log("Employee fetched Successfully")
@@ -33,7 +33,6 @@ app.get('/intern_employee', (req, res) => {
         console.log("Intern Employee fetched Successfully");
     });
 });
-
 
 
 app.listen(port, () => {
