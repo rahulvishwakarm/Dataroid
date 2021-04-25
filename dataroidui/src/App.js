@@ -8,6 +8,8 @@ import {BrowserRouter as Router,Switch, Route,Link} from 'react-router-dom'
 import AboutUsMain from "./utils/AboutUs/AboutUsMain";
 import DataStoryMain from "./utils/Data Story/DataStoryMain";
 import LoginForm from "./utils/Login/LoginForm";
+import B2BDatabase from "./utils/Service/B2B Database/B2BDatabase";
+import DataMining from "./utils/Service/Data Mining/DataMining";
 
 function App() {
   return (
@@ -29,11 +31,11 @@ function App() {
                     </Route>
 
                     <Route path="/b2bdatabase">
-                      
+                        <B2BDatabase/>
                     </Route>
 
                     <Route path="/datamining">
-                      
+                        <DataMining/>
                     </Route>
 
                     <Route path="/datawrangling">

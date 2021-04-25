@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LoginForm from '../Login/LoginForm';
 import './Header.css';
 
 class Header extends React.Component {
@@ -36,11 +35,11 @@ class Header extends React.Component {
                                     Services
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><button className="dropdown-item" >B2B Database</button></li>
-                                    <li><button className="dropdown-item" >Data Mining</button></li>
-                                    <li><button className="dropdown-item" >Data Wrangling</button></li>
-                                    <li><button className="dropdown-item" >Data Research</button></li>
-                                    <li><button className="dropdown-item" >Master Database</button></li>
+                                    <li><Link to="/b2bdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >B2B Database</button></Link></li>
+                                    <li><Link to="/datamining" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Mining</button></Link></li>
+                                    <li><Link to="/datawrangling" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Wrangling</button></Link></li>
+                                    <li><Link to="/dataresearch" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Research</button></Link></li>
+                                    <li><Link to="/masterdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Master Database</button></Link></li>
                                 </ul>
                             </li>
                             </ul>
