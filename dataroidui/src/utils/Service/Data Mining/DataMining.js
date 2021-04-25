@@ -5,7 +5,9 @@ class DataMining extends Component {
     render() {
         return (
             <div className="datamining">
-                <h1>Data Mining</h1>
+                <div className="datamining-heading">
+                    <h2>Data Mining</h2>
+                </div>
             </div>
         )
     }

@@ -4,7 +4,9 @@ import './MasterDatabase.css';
 function MasterDatabase() {
     return (
         <div className="masterdatabase">
-            <h1>Master Database</h1>
+            <div className="masterdatabase-heading">
+                <h2>Master Database</h2>
+            </div>
         </div>
     )
 }

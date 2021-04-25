@@ -4,7 +4,9 @@ import './DataResearch.css';
 function DataResearch() {
     return (
         <div className="dataresearch">
-            <h1>Data Research</h1>
+            <div className="dataresearch-header">
+                <h2>Data Research</h2>
+            </div>
         </div>
     )
 }

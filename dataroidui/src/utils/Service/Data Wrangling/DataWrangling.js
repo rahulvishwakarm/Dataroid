@@ -4,7 +4,9 @@ import './DataWrangling.css';
 function DataWrangling() {
         return (
             <div className="datawrangling">
-                <h1>Data Wrangling</h1>
+                <div className="datawrangling-heading">
+                    <h2>Data Wrangling</h2>
+                </div>
             </div>
         )
 }

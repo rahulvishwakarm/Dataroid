@@ -1,3 +1,12 @@
 .dataresearch{
     margin-top: 65px;
 }
+
+.dataresearch-header{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
+}
