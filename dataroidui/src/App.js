@@ -52,6 +52,10 @@ function App() {
                     <Route path="/masterdatabase">
                         <MasterDatabase/>
                     </Route>
+
+                    <Route path="/development">
+
+                    </Route>
                     
                     <Route path="/">
                       <BannerDisplay/>
