@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './B2BDatabase.css';
 
 function B2BDatabase() {
     return (
