@@ -11,6 +11,7 @@ import LoginForm from "./utils/Login/LoginForm";
 import B2BDatabase from "./utils/Service/B2B Database/B2BDatabase";
 import DataMining from "./utils/Service/Data Mining/DataMining";
 import DataWrangling from "./utils/Service/Data Wrangling/DataWrangling";
+import DataResearch from "./utils/Service/Data Research/DataResearch";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
                     </Route>
 
                     <Route path="/dataresearch">
-                      
+                        <DataResearch/>
                     </Route>
 
                     <Route path="/masterdatabase">
