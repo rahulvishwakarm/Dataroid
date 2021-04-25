@@ -27,6 +27,26 @@ function App() {
                     <Route path="/Login">
                       <LoginForm/>
                     </Route>
+
+                    <Route path="/b2bdatabase">
+                      
+                    </Route>
+
+                    <Route path="/datamining">
+                      
+                    </Route>
+
+                    <Route path="/datawrangling">
+                      
+                    </Route>
+
+                    <Route path="/dataresearch">
+                      
+                    </Route>
+
+                    <Route path="/masterdatabase">
+                      
+                    </Route>
                     
                     <Route path="/">
                       <BannerDisplay/>
