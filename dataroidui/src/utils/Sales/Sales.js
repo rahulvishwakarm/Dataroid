@@ -1,5 +1,6 @@
 import React from 'react';
 import InDevelopment from '../../img/InDevelopment.png';
+import './Sales.css';
 
 function Sales() {
     return (
@@ -9,4 +10,4 @@ function Sales() {
     )
 }
 
-export default Sales
+export default Sales;

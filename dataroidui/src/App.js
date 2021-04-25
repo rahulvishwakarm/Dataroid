@@ -13,6 +13,7 @@ import DataMining from "./utils/Service/Data Mining/DataMining";
 import DataWrangling from "./utils/Service/Data Wrangling/DataWrangling";
 import DataResearch from "./utils/Service/Data Research/DataResearch";
 import MasterDatabase from "./utils/Service/Master Database/MasterDatabase";
+import Sales from "./utils/Sales/Sales";
 
 function App() {
   return (
@@ -53,8 +54,8 @@ function App() {
                         <MasterDatabase/>
                     </Route>
 
-                    <Route path="/development">
-
+                    <Route path="/sales">
+                        <Sales/>
                     </Route>
                     
                     <Route path="/">
