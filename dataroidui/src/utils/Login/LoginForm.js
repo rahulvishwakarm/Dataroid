@@ -1,7 +1,8 @@
 import React ,{useState} from 'react';
 import './LoginForm.css';
 import {useHistory} from "react-router-dom";
-import { Button } from 'reactstrap';    
+import { Button } from 'reactstrap'; 
+import Axios from 'axios';
 
 function LoginForm() {
     const history = useHistory();
@@ -14,6 +15,14 @@ function LoginForm() {
                 e.preventDefault();
                 history.push('/')
                 alert("Sign In Succesfull");
+                Axios.post("http://localhost:5000/login",
+                {
+                    emailid:email,
+                    passwordid:password
+                }).then((response)=> {
+                    console.log(response)
+                })
+                console.log(email,password);
             }else{
                 alert("Please enter password!!");
             }
