@@ -12,6 +12,7 @@ import B2BDatabase from "./utils/Service/B2B Database/B2BDatabase";
 import DataMining from "./utils/Service/Data Mining/DataMining";
 import DataWrangling from "./utils/Service/Data Wrangling/DataWrangling";
 import DataResearch from "./utils/Service/Data Research/DataResearch";
+import MasterDatabase from "./utils/Service/Master Database/MasterDatabase";
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
                     </Route>
 
                     <Route path="/masterdatabase">
-                      
+                        <MasterDatabase/>
                     </Route>
                     
                     <Route path="/">

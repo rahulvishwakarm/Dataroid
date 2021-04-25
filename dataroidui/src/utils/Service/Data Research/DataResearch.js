@@ -9,4 +9,4 @@ function DataResearch() {
     )
 }
 
-export default DataResearch
+export default DataResearch;
