@@ -55,8 +55,10 @@ function LoginForm() {
                                         <Button className="forgetpassword" color="danger" onClick={forgetpassword}>Forget Password</Button>
                                 </div><br></br>
                                 <div className="container1" >
-                                    <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p> 
-                                    <Link to="/register"><Button className="register" color="warning">Create Your Dataroid Account</Button></Link>
+                                    <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p>
+                                    <div className="login-button-update">
+                                        <Link to="/register"><Button className="register" color="warning">Create Your Dataroid Account</Button></Link>
+                                    </div> 
                                 </div>
                     </form>
             </div>
