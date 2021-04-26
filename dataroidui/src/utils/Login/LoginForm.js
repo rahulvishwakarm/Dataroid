@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import './LoginForm.css';
-import {useHistory} from "react-router-dom";
+import {useHistory,Link} from "react-router-dom";
 import { Button } from 'reactstrap'; 
 import Axios from 'axios';
 
@@ -18,7 +18,8 @@ function LoginForm() {
                 Axios.post("http://localhost:5000/login",
                 {
                     emailid:email,
-                    passwordid:password
+                    passwordid:password,
+                    
                 }).then((response)=> {
                     console.log(response)
                 })
@@ -31,17 +32,6 @@ function LoginForm() {
             alert("Please enter username!!");
         }
         
-    }
-
-    const register = e =>{
-        if(email!="" & password!=""){
-                    e.preventDefault();
-                    history.push('/')
-                    alert("Sign up Succesfull");
-                }
-        else{
-            alert("Please enter username and password")
-        }
     }
 
     const forgetpassword = e =>{
@@ -66,7 +56,7 @@ function LoginForm() {
                                 </div><br></br>
                                 <div className="container1" >
                                     <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p> 
-                                    <Button className="register" color="warning" onClick={register}>Create Your Dataroid Account</Button>
+                                    <Link to="/register"><Button className="register" color="warning">Create Your Dataroid Account</Button></Link>
                                 </div>
                     </form>
             </div>

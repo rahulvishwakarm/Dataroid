@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 const port =5000
 const mysql = require('mysql');
+const crypto = require("crypto");
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -38,10 +39,11 @@ app.use(cors());
 app.post("/login",(req,res) =>{
     const emailid = req.body.emailid;
     const passwordid = req.body.passwordid;
+    const uniqueId = crypto.randomBytes(12).toString("hex");
     console.log(emailid,passwordid);
     connection.query(
-        "INSERT INTO login(username,password) values(?,?)",
-        [emailid,passwordid],
+        "INSERT INTO login(username,password,uniqueId) values(?,?,?)",
+        [emailid,passwordid,uniqueId],
         (err,result) => {
             console.log(err);
         }
