@@ -53,11 +53,11 @@ function LoginForm() {
                                     <input className="passwordinput" type="password" placeholder="Enter Password" value={password} name="psw" onChange={e=>setPassword(e.target.value)} /><br></br>
                                         <Button className="loginbutton" color="success" onClick={signIn}>Sign In</Button>
                                         <Button className="forgetpassword" color="danger" onClick={forgetpassword}>Forget Password</Button>
-                                </div><br></br>
+                                </div>
                                 <div className="container1" >
                                     <p>By continuing, you agree to Dataroid's Conditions of Use and Privacy Notice.</p>
                                     <div className="login-button-update">
-                                        <Link to="/register"><Button className="register" color="warning">Create Your Dataroid Account</Button></Link>
+                                        <Link to="/register"><Button className="register" color="warning" >Create Your Dataroid Account</Button></Link>
                                     </div> 
                                 </div>
                     </form>
