@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap'; 
 import './Register.css';
 
@@ -11,27 +10,36 @@ function Register(){
 
     const register = () => {
         const emailRegex  = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-        if(regemail!="" & emailRegex.test(regemail)) {
-            //success regemail
-            if(companyname!="") {
-                //success companyname
-                if(phone!="") {
-                    //success phone
-                    if(regpassword!="") {
-                        //success passwword
+        const phoneRegex = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/;
+        if(regemail!="") {
+            if(emailRegex.test(regemail)) {
+                if(companyname!="") {
+                    if(phone!="") {
+                        if(phoneRegex.test(phone)) {
+                            if(regpassword!="") {
+                                
+                            }
+                            else {
+                                alert("Please enter your password!!")
+                            }
+                        }
+                        else {
+                            alert("Please Enter Phone number in proper format!!!")
+                        }
+                    }else {
+                        alert("Please enter you phone number!!")
                     }
-                    else {
-                        alert("Please enter your password!!")
-                    }
-                }else {
-                    alert("Please enter you phone number!!")
+                }
+                else {
+                    alert("Please enter your company name!!")
                 }
             }
             else {
-                alert("Please enter your company name!!")
+                alert("Please enter your email in proper format!!");
             }
+            
         }else {
-            alert("Please enter your email in proper format!!")
+            alert("Please enter your email!!")
         }
     }
         return (
