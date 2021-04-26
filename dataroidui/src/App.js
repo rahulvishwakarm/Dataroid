@@ -14,6 +14,7 @@ import DataWrangling from "./utils/Service/Data Wrangling/DataWrangling";
 import DataResearch from "./utils/Service/Data Research/DataResearch";
 import MasterDatabase from "./utils/Service/Master Database/MasterDatabase";
 import Sales from "./utils/Sales/Sales";
+import Register from "./utils/Register/Register";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 
                     <Route path="/Login">
                       <LoginForm/>
+                    </Route>
+
+                    <Route path="/register">
+                      <Register/>
                     </Route>
 
                     <Route path="/b2bdatabase">
