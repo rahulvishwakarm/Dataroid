@@ -58,6 +58,29 @@ app.get('/login', (req, res) => {
     });
 });
 
+app.post("/register",(req,res) =>{
+    const ui_regemail = req.body.ui_regemail;
+    const ui_companyname = req.body.ui_companyname;
+    const ui_phone = req.body.ui_phone;
+    const ui_regpassword = req.body.ui_regpassword;
+    const uniqueId = crypto.randomBytes(12).toString("hex");
+    connection.query(
+        "INSERT INTO register(emailid,company,phone,password,uniqueId) values(?,?,?,?,?)",
+        [ui_regemail,ui_companyname,ui_phone,ui_regpassword,uniqueId],
+        (err,result) => {
+            console.log(err);
+        }
+    )
+})
+
+app.get('/register', (req, res) => {
+    connection.query("SELECT * FROM register;", (err, results, fields) => {
+        if(err) throw err;
+        res.send(results);
+        console.log("Registered User Fetched Succesfully")
+    });
+});
+
 app.listen(port, () => {
     console.log(`Application running ar http://localhost:${port}`)
 })

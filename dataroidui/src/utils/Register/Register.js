@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap'; 
 import './Register.css';
+import {useHistory} from 'react-router-dom';
+import Axios from 'axios';
 
 function Register(){
+    const history = useHistory();
     const [regemail, setRegemail] = useState('');
     const [companyname, setCompany] = useState('');
     const [phone, setPhone] = useState('');
     const [regpassword, setRegpassword] = useState('');
 
-    const register = () => {
+    const register = (e) => {
         const emailRegex  = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
         const phoneRegex = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/;
         if(regemail!="") {
@@ -17,7 +20,25 @@ function Register(){
                     if(phone!="") {
                         if(phoneRegex.test(phone)) {
                             if(regpassword!="") {
-                                
+                                if(!(regpassword.length>8)) {
+                                    alert('You will receive your login credentials, After Verfication of your account!!')
+                                    e.preventDefault();
+                                    history.push('/login')
+                                    alert("You are registered with Us!!");
+                                    Axios.post("http://localhost:5000/register",
+                                    {
+                                        ui_regemail:regemail,
+                                        ui_companyname:companyname,
+                                        ui_phone:phone,
+                                        ui_regpassword:regpassword,
+                                    }).then((response)=> {
+                                        console.log(response)
+                                    })
+                                    console.log(regemail,companyname,phone,regpassword);
+                                }
+                                else{
+                                    alert("Length of password should be 8 !!")
+                                }
                             }
                             else {
                                 alert("Please enter your password!!")
