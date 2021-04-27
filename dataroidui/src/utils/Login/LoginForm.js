@@ -48,7 +48,7 @@ function LoginForm() {
                     <form className="modal-content animate">
                                 <div className="container1">
                                     <label htmlFor="uname"><b>Username</b></label>
-                                    <input className="usernameinput" type="email" placeholder="Enter Username" value={email} name="uname" onChange={e=>setEmail(e.target.value)} /><br></br>
+                                    <input className="usernameinput" type="email" placeholder="Enter User Id" value={email} name="uname" onChange={e=>setEmail(e.target.value)} /><br></br>
                                     <label htmlFor="psw"><b>Password</b></label>
                                     <input className="passwordinput" type="password" placeholder="Enter Password" value={password} name="psw" onChange={e=>setPassword(e.target.value)} /><br></br>
                                         <Button className="loginbutton" color="success" onClick={signIn}>Sign In</Button>

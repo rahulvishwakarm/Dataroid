@@ -39,11 +39,10 @@ app.use(cors());
 app.post("/login",(req,res) =>{
     const emailid = req.body.emailid;
     const passwordid = req.body.passwordid;
-    const uniqueId = crypto.randomBytes(12).toString("hex");
     console.log(emailid,passwordid);
     connection.query(
-        "INSERT INTO login(username,password,uniqueId) values(?,?,?)",
-        [emailid,passwordid,uniqueId],
+        "INSERT INTO login(username,password) values(?,?,)",
+        [emailid,passwordid],
         (err,result) => {
             console.log(err);
         }
