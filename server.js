@@ -36,7 +36,7 @@ app.use(cors());
 //     });
 // });
 
-app.post("/login",(req,res) =>{
+app.post("",(req,res) =>{
     const emailid = req.body.emailid;
     const passwordid = req.body.passwordid;
     console.log(emailid,passwordid);
@@ -57,7 +57,7 @@ app.get('/login', (req, res) => {
     });
 });
 
-app.post("/register",(req,res) =>{
+app.post("",(req,res) =>{
     const ui_regemail = req.body.ui_regemail;
     const ui_companyname = req.body.ui_companyname;
     const ui_phone = req.body.ui_phone;
