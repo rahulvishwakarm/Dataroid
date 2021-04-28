@@ -3,6 +3,7 @@ import './LoginForm.css';
 import {useHistory,Link} from "react-router-dom";
 import { Button } from 'reactstrap'; 
 import Axios from 'axios';
+import InfoIcon from '@material-ui/icons/Info';
 
 function LoginForm() {
     const history = useHistory();
@@ -47,8 +48,8 @@ function LoginForm() {
             <div className="id01">
                     <form className="modal-content animate">
                                 <div className="container1">
-                                    <label htmlFor="uname"><b>Username</b></label>
-                                    <input className="usernameinput" type="email" placeholder="Enter User Id" value={email} name="uname" onChange={e=>setEmail(e.target.value)} /><br></br>
+                                    <label htmlFor="uname"><b>Customer Id</b><InfoIcon style={{'font-size':'15px','color':'#48cae4','margin-left':'2px'}}/></label>
+                                    <input className="usernameinput" type="email" placeholder="Enter Customer Id" value={email} name="uname" onChange={e=>setEmail(e.target.value)} /><br></br>
                                     <label htmlFor="psw"><b>Password</b></label>
                                     <input className="passwordinput" type="password" placeholder="Enter Password" value={password} name="psw" onChange={e=>setPassword(e.target.value)} /><br></br>
                                         <Button className="loginbutton" color="success" onClick={signIn}>Sign In</Button>
