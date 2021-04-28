@@ -36,12 +36,12 @@ app.use(cors());
 //     });
 // });
 
-app.post("",(req,res) =>{
+app.post("/login",(req,res) =>{
     const emailid = req.body.emailid;
     const passwordid = req.body.passwordid;
     console.log(emailid,passwordid);
     connection.query(
-        "INSERT INTO login(username,password) values(?,?,)",
+        "INSERT INTO login(username,password) values(?,?)",
         [emailid,passwordid],
         (err,result) => {
             console.log(err);
@@ -57,7 +57,7 @@ app.get('/login', (req, res) => {
     });
 });
 
-app.post("",(req,res) =>{
+app.post("/register",(req,res) =>{
     const ui_regemail = req.body.ui_regemail;
     const ui_companyname = req.body.ui_companyname;
     const ui_phone = req.body.ui_phone;

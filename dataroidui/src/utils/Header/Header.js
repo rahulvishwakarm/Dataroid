@@ -46,7 +46,7 @@ class Header extends React.Component {
                         </div>
                         <div className="MainClassLogin">
                             <Link to="/Login">
-                                <button className="btn btn-primary loginbutton" type="button">
+                                <button className="loginbutton" type="button" >
                                     Login
                                 </button>
                             </Link>

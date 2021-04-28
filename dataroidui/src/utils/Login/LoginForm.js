@@ -9,7 +9,6 @@ function LoginForm() {
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [display,setDisplay] = useState('');
     
     const signIn = e =>{
         if(email!="" ){

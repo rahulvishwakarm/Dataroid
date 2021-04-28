@@ -11,7 +11,9 @@
 }
 
 .loginbutton {
-    color: whitesmoke;
+    background-color: #00b4d8;
+    padding: 5px 20px;
+    color: antiquewhite;
 }
 
 Link:hover{
