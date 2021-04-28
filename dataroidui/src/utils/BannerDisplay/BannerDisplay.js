@@ -12,7 +12,7 @@ function BannerDisplay() {
                     <div className="B2B-Description">
                         B2B contact data refers to the contact information of decision makers in companies. 
                         Business contact lists are mostly used by marketers and sales teams e.g. in lead enrichment and account based marketing. 
-                        Datarade helps you find the right B2B contact databases and providers <span className="learnmore"><a href="www.google.com">Learn more →</a></span>
+                        Datarade helps you find the right B2B contact databases and providers <span className="learnmore"><a href="https://en.wikipedia.org/wiki/Business-to-business" target="_blank">Learn more →</a></span>
                     </div>
                 </div>            
             </div>
