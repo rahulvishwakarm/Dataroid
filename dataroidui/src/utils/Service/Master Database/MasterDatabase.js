@@ -31,7 +31,7 @@ function MasterDatabase() {
                 </div>
             </div>
             <div className="database-management-process">
-                <strong>Our Data Management Process:</strong>
+                <h4>Our Data Management Process:</h4>
                 <ol>
                     <li>
                         <strong>Mapping Process - </strong>
