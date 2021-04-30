@@ -5,8 +5,8 @@
 .about-b2b-dataroid{
     margin-left: 80px;
     margin-right: 80px;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
     color: black;
 }
 
@@ -27,4 +27,8 @@
 
 strong {
     margin-right: 5px;
+}
+
+.b2b-database-image{
+    margin-left: 35%;
 }

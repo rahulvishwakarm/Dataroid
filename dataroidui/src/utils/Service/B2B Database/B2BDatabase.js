@@ -1,5 +1,6 @@
 import React from 'react';
 import './B2BDatabase.css';
+import b2bData from '../../../img/b2b.jpg';
 
 function B2BDatabase() {
     return (
@@ -7,8 +8,11 @@ function B2BDatabase() {
             <div className="B2Bdatabase-Heading">
                 <h2>B2B Database</h2>
             </div>
+            <div className="b2b-database-image">
+                <img src={b2bData} alt="B2B Database" height="200" width="400"/>
+            </div>
             <div className="about-b2b-dataroid">
-                <p>DataRoid B2B Database helps customers to target high quality B2B database. Any companies’ sales and marketing strategies depends upon whom are they targeting? It can be based on industry segments, company size, geography, decision makers in the organization and more. Our B2B data helps customers to identify and connect with new prospects.</p>
+                <p><b>DataRoid B2B Database</b> helps customers to target high quality B2B database. Any companies’ sales and marketing strategies depends upon whom are they targeting? It can be based on industry segments, company size, geography, decision makers in the organization and more. Our B2B data helps customers to identify and connect with new prospects.</p>
             </div>
             <div className="database-categorized">
                 <h4>Our B2B database is categorised based on:</h4>
