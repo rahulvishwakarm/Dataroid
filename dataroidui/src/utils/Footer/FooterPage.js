@@ -32,11 +32,11 @@ function FooterPage() {
                       <div className="service-link-redirect">
                               <ul className="link-redirect-list">
                                   <p style={{'font-size':'20px','font-weight':'bold'}}>Services</p>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px',}}/><a href="/" style={{'text-decorate':'none'}}> B2B Database</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datastory" style={{'text-decorate':'none'}}> Data Research</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/aboutUs" style={{'text-decorate':'none'}}> Data Cleansing</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/sales" style={{'text-decorate':'none'}}> Email Database</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/services" style={{'text-decorate':'none'}}> Master Database</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px',}}/><a href="/b2bdatabase" style={{'text-decorate':'none'}}> B2B Database</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/dataresearch" style={{'text-decorate':'none'}}> Data Research</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datawrangling" style={{'text-decorate':'none'}}> Data Wrangling</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datamining" style={{'text-decorate':'none'}}> Data Mining</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/masterdatabase" style={{'text-decorate':'none'}}> Master Database</a></li>
                               </ul>
                       </div>
                       <div className="footer-contact">
