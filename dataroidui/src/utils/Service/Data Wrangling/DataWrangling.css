@@ -10,3 +10,11 @@
     margin-bottom: 20px;
     background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
 }
+
+.datawrangling-about{
+    display: flex;
+}
+
+.datawrangling-image{
+    margin-top: 50px;
+}
