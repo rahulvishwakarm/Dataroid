@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 
 class Header extends React.Component {
     render(){
@@ -45,9 +46,9 @@ class Header extends React.Component {
                             </ul>
                         </div>
                         <div className="MainClassLogin">
-                            <Link to="/Login">
+                            <Link to="/ContactUs">
                                 <button className="loginbutton" type="button" >
-                                    Login
+                                    <b>Contact Us</b> <PermContactCalendarIcon style={{"color":"#023047"}}/> 
                                 </button>
                             </Link>
                         </div>

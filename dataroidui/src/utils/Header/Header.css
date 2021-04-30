@@ -11,12 +11,16 @@
 }
 
 .loginbutton {
-    background-color: #00b4d8;
     padding: 5px 20px;
-    color: antiquewhite;
+    background-color: #e0fbfc;
 }
+
 
 Link:hover{
     text-decoration: none;
+}
+
+.MainClassLogin{
+    border: 1px solid black;
 }
 

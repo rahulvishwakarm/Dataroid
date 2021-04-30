@@ -30,8 +30,8 @@ function App() {
                       <DataStoryMain/>
                     </Route>
 
-                    <Route path="/Login">
-                      <LoginForm/>
+                    <Route path="/ContactUs">
+                      
                     </Route>
 
                     <Route path="/register">
