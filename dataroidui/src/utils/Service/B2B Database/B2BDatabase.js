@@ -11,7 +11,7 @@ function B2BDatabase() {
                 <p>DataRoid B2B Database helps customers to target high quality B2B database. Any companies’ sales and marketing strategies depends upon whom are they targeting? It can be based on industry segments, company size, geography, decision makers in the organization and more. Our B2B data helps customers to identify and connect with new prospects.</p>
             </div>
             <div className="database-categorized">
-                <h3>Our B2B database is categorised based on:</h3>
+                <h4>Our B2B database is categorised based on:</h4>
                 <ol>
                     <li>
                         <strong>Industry-Sub Industry Segments:</strong>
