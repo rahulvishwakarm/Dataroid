@@ -14,6 +14,7 @@ import DataResearch from "./utils/Service/Data Research/DataResearch";
 import MasterDatabase from "./utils/Service/Master Database/MasterDatabase";
 import Sales from "./utils/Sales/Sales";
 import Register from "./utils/Register/Register";
+import ContactUs from "./utils/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
                     </Route>
 
                     <Route path="/ContactUs">
-                      
+                        <ContactUs/>
                     </Route>
 
                     <Route path="/register">

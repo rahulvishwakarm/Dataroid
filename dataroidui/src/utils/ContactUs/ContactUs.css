@@ -1,0 +1,14 @@
+.contact-us{
+    padding-top: 65px;
+}
+
+.contact-number-email{
+    display: flex;
+    
+}
+
+.contact-number ,.contact-email{
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px 80px;
+}
