@@ -13,7 +13,7 @@ function VerifiedData() {
     const cat1 = [{category:"IT / ITES Companies Database"},{category:"Manufacturing Companies Database"},{category:"BFSI Companies Database"},{category:"Pharmaceutical Companies Database"},{category:"Chemical Companies Database"}];
     const cat2 = [{category:"Healthcare Companies Database"},{category:"Textile Companies Database"},{category:"Infra Companies Database"},{category:"Logistic Companies Database"},{category:"Start-Up Companies Database"}];
     const cat3 = [{category:"Top Companies Database"},{category:"Top Listed Companies Database"},{category:"Blue Chip Companies Database"},{category:"MNC Companies Database"},{category:"SME Companies Database"}];
-    const cat4 = [{category:"CEO Contacts Database"},{category:"IT Contact Database"},{category:"Finance Contact Database"},{category:"HR Contact Database"},{category:"Marketing Contact Database"}];
+    const cat4 = [{category:"CEO  Companies Contacts Database"},{category:"IT Companies Contact Database"},{category:"Finance Companies Contact Database"},{category:"HR Companies Contact Database"},{category:"Marketing Companies Contact Database"}];
     const cat5 = [{category:"C Level Contact Database"},{category:"CFO Contact Database"},{category:"CIO/CTO Contact Database"},{category:"CPO Contact Database"},{category:"CHRO Contact Database"}];
     const cat6 = [{category:"Mumbai Companies Database"},{category:"Delhi Companies Database"},{category:"Bangalore Companies Database"},{category:"Hyderabad Companies Database"},{category:"Chennai Companies Database"}];
     const image = [img0,img1,img2,img3,img4,img5,img6]

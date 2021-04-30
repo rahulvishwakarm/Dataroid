@@ -1,9 +1,12 @@
 .ServiceBannerMain{
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
+    
 }
 
 .servicebanner {
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,8 +14,10 @@
 .serviceBannerBox{
     border: 1px solid black;
     padding: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     flex: 1 0 30%;
     margin: 20px;
 }
