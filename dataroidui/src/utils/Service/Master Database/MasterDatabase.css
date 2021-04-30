@@ -10,3 +10,21 @@
     margin-bottom: 20px;
     background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
 }
+
+.masterdatabase-content{
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.master-list-image{
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 90px;
+    display: flex;
+}
+
+.database-management-process{
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
