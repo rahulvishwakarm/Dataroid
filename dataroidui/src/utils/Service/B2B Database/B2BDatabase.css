@@ -2,6 +2,20 @@
     margin-top: 65px;
 }
 
+.about-b2b-dataroid{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: black;
+}
+
+.database-categorized{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+
 .B2Bdatabase-Heading{
     padding-top: 20px;
     padding-bottom: 15px;
@@ -9,4 +23,8 @@
     margin-top: 30px;
     margin-bottom: 20px;
     background: linear-gradient(89.21deg,#1371c3 -3.77%,rgba(36,188,148,.8) 140.43%);
+}
+
+strong {
+    margin-right: 5px;
 }

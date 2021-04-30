@@ -5,7 +5,7 @@ import './Sales.css';
 function Sales() {
     return (
         <div className="salessite">
-            <img src={InDevelopment} alt="Under Development!!!"/>
+            {/* <img src={InDevelopment} alt="Under Development!!!"/> */}
         </div>
     )
 }

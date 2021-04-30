@@ -13,7 +13,7 @@ function VerifiedDataWidget(props) {
                 <ul className="list-group categ">
                         {
                             props.tst.map(item => (
-                                <li key={item.id}>
+                                <li key={item.id} className="list-editing">
                                     <AiOutlineApi/>
                                     <span className="spacing-database">{item.category}</span>
                                 </li>
