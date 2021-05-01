@@ -8,9 +8,8 @@
     "install-dataroidui":"cd dataroidui && npm install",
     "heroku-postbuild":"npm run install-dataroidui && npm run build",
     "start": "node server.js",
-    "server": "nodemon server.js",
     "dataroidui": "cd dataroidui && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run dataroidui\""
+    "dev":"concurrently -n 'server,dataroidui' -c 'red,green'  \"nodemon server.js\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
