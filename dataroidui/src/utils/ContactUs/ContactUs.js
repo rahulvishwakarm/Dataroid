@@ -10,7 +10,7 @@ function ContactUs() {
                 <div className="contact-number">
                     <PhonelinkRingIcon />
                     <p>Mobile Number</p>
-                    <strong>+91 1234567890</strong>
+                    <strong>+91 1234568790</strong>
                 </div>
                 <div className="contact-email">
                     <EmailIcon/>
