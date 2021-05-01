@@ -19,7 +19,6 @@ function ContactUs() {
                 </div>
             </div>
             <div className="contact-form">
-
             </div>
         </div>
     )

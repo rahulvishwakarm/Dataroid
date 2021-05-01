@@ -7,7 +7,7 @@
 
 #navbarSupportedContent{
     display: flex;
-    justify-content: space-evenly;
+    margin-left:60px;
 }
 
 .loginbutton {
@@ -24,3 +24,6 @@ Link:hover{
     border: 1px solid black;
 }
 
+.navbar-brand{
+    margin-left: 30px;
+}

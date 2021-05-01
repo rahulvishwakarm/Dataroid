@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express()
 const cors = require('cors')
-const port =5000
+const port = process.env.PORT || 5000
 const mysql = require('mysql');
 const crypto = require("crypto");
 
@@ -79,6 +79,10 @@ app.get('/register', (req, res) => {
         console.log("Registered User Fetched Succesfully")
     });
 });
+
+if(process.env.NODE_ENV ==="production") {
+    app.use(express.static('dataroidui/build'));
+}
 
 app.listen(port, () => {
     console.log(`Application running ar http://localhost:${port}`)

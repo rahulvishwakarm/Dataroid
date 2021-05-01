@@ -4,6 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build":"cd dataroidui && npm run build",
+    "install-dataroidui":"cd dataroidui && npm install",
+    "heroku-postbuild":"npm run install-dataroidui && npm run build",
     "start": "node server.js",
     "server": "nodemon server.js",
     "dataroidui": "cd dataroidui && npm start",
