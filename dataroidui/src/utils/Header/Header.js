@@ -19,30 +19,28 @@ class Header extends React.Component {
                         </form> */}
                         <div className="navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/aboutUs">About Us</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/datastory">Data Story</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/sales">Sales</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="www.google.com">
-                                    Services
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><Link to="/b2bdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >B2B Database</button></Link></li>
-                                    <li><Link to="/datamining" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Mining</button></Link></li>
-                                    <li><Link to="/datawrangling" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Wrangling</button></Link></li>
-                                    <li><Link to="/dataresearch" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Research</button></Link></li>
-                                    <li><Link to="/masterdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Master Database</button></Link></li>
-                                </ul>
-                            </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" to="/">Home</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" to="/aboutUs">About Us</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" to="/datastory">Data Story</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" to="/sales">Sales</Link>
+                                </li>
+                                <li className="nav-item dropdown">
+                                    <Link className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/">Services</Link>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><Link to="/b2bdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >B2B Database</button></Link></li>
+                                        <li><Link to="/datamining" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Mining</button></Link></li>
+                                        <li><Link to="/datawrangling" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Wrangling</button></Link></li>
+                                        <li><Link to="/dataresearch" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Research</button></Link></li>
+                                        <li><Link to="/masterdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Master Database</button></Link></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div className="MainClassLogin">
@@ -52,7 +50,6 @@ class Header extends React.Component {
                                 </button>
                             </Link>
                         </div>
-                        
                     </div>
                 </nav>
             </div>

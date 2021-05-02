@@ -6,6 +6,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import {Link} from 'react-router-dom';
 
 function FooterPage() {
   return (
@@ -21,22 +22,22 @@ function FooterPage() {
                           <div className="link-redirect"> 
                               <ul className="link-redirect-list">
                                   <p style={{'font-size':'20px','font-weight':'bold'}}>Redirect</p>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/" style={{'text-decorate':'none'}}> Home</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datastory" style={{'text-decorate':'none'}}> About Us</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/aboutUs" style={{'text-decorate':'none'}}> Data Story</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/sales" style={{'text-decorate':'none'}}> Sales</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/services" style={{'text-decorate':'none'}}> Services</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/" style={{'text-decorate':'none'}}> Home</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/datastory" style={{'text-decorate':'none'}}> About Us</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/aboutUs" style={{'text-decorate':'none'}}> Data Story</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/sales" style={{'text-decorate':'none'}}> Sales</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/services" style={{'text-decorate':'none'}}> Services</Link></li>
                               </ul>
                           </div>
                       </div>
                       <div className="service-link-redirect">
                               <ul className="link-redirect-list">
                                   <p style={{'font-size':'20px','font-weight':'bold'}}>Services</p>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px',}}/><a href="/b2bdatabase" style={{'text-decorate':'none'}}> B2B Database</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/dataresearch" style={{'text-decorate':'none'}}> Data Research</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datawrangling" style={{'text-decorate':'none'}}> Data Wrangling</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/datamining" style={{'text-decorate':'none'}}> Data Mining</a></li>
-                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><a href="/masterdatabase" style={{'text-decorate':'none'}}> Master Database</a></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px',}}/><Link to="/b2bdatabase" style={{'text-decorate':'none'}}> B2B Database</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/dataresearch" style={{'text-decorate':'none'}}> Data Research</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/datawrangling" style={{'text-decorate':'none'}}> Data Wrangling</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/datamining" style={{'text-decorate':'none'}}> Data Mining</Link></li>
+                                  <li><ArrowForwardIosIcon style={{'font-size':'10px'}}/><Link to="/masterdatabase" style={{'text-decorate':'none'}}> Master Database</Link></li>
                               </ul>
                       </div>
                       <div className="footer-contact">
