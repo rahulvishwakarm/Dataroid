@@ -1,0 +1,22 @@
+.contactusform-main{
+    text-align: center;
+}
+
+.contactusform-header{
+    margin:20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.contactusform-header p{
+    margin-left: 70px;
+    margin-right: 75px;
+}
+
+.contactusform-form{
+    border: 1px solid red;
+}
+
+input{
+    padding: 10px;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './ContactUs.css';
 import PhonelinkRingIcon from '@material-ui/icons/PhonelinkRing';
 import EmailIcon from '@material-ui/icons/Email';
-import {Link} from 'react-router-dom';
+import ContactUsForm from './ContactUsForm';
 
 function ContactUs() {
     return (
@@ -20,6 +20,7 @@ function ContactUs() {
                 </div>
             </div>
             <div className="contact-form">
+                    <ContactUsForm/>
             </div>
         </div>
     )
