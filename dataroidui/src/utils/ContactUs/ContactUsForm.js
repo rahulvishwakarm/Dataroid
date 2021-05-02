@@ -41,7 +41,7 @@ function ContactUsForm() {
                     </div><br></br>
                     <div className="row">
                         <div className="col-4">
-                            <button className="submit-button"><b>Submit</b></button>
+                            <button className="submit-button">Submit</button>
                         </div>
                     </div>
             </div>
