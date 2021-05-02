@@ -4,6 +4,11 @@ import './Header.css';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 
 class Header extends React.Component {
+
+    componentDidMount() {
+        document.title = 'Leading B2B Database Provider in India';
+    }
+
     render(){
         return (
             <div>

@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
+import React,{useEffect}  from 'react';
 import './DataWrangling.css';
 import Datawrang from '../../../img/Data-wrangling.jpg';
 
 function DataWrangling() {
+
+    useEffect(() => {
+        document.title = 'Data Wrangling - Leading B2B Database Provider in India';
+    });
+
         return (
             <div className="datawrangling">
                 <div className="datawrangling-heading">

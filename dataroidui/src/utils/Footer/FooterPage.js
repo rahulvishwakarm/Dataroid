@@ -9,6 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Link} from 'react-router-dom';
 
 function FooterPage() {
+
   return (
           <div className="footer">
                   <footer className="footer-distributed">

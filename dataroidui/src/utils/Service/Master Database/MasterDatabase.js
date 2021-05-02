@@ -1,8 +1,13 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './MasterDatabase.css';
 import Master from '../../../img/Master_Data_Management.png';
 
 function MasterDatabase() {
+
+    useEffect(() => {
+        document.title = 'Master Database - Leading B2B Database Provider in India';
+    });
+
     return (
         <div className="masterdatabase">
             <div className="masterdatabase-heading">

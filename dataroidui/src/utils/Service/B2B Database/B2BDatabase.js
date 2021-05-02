@@ -1,8 +1,13 @@
-import React from 'react';
+import React,{useEffect}  from 'react';
 import './B2BDatabase.css';
 import b2bData from '../../../img/b2b.jpg';
 
 function B2BDatabase() {
+    
+    useEffect(() => {
+        document.title = 'B2B Database - Leading B2B Database Provider in India';
+    });
+
     return (
         <div className="b2bdatabase">
             <div className="B2Bdatabase-Heading">

@@ -1,7 +1,12 @@
-import React from 'react';
+import React,{useEffect}  from 'react';
 import './DataStoryMain.css'
 
 function DataStoryMain() {
+
+    useEffect(() => {
+        document.title = 'Data Story - Leading B2B Database Provider in India';
+    });
+
     return (
         <div className="DataStory">
             <div className="DataStory-Heading">

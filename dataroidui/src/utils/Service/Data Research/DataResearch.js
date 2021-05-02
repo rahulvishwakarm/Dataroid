@@ -1,8 +1,13 @@
-import React from 'react';
+import React,{useEffect}  from 'react';
 import './DataResearch.css';
 import Datasearch from '../../../img/research-data.jpg';
 
 function DataResearch() {
+
+    useEffect(() => {
+        document.title = 'Data Research - Leading B2B Database Provider in India';
+    });
+
     return (
         <div className="dataresearch">
             <div className="dataresearch-header">

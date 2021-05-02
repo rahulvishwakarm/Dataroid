@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './AboutUsMain.css';
 import vision from '../../img/1.png';
 import mission from '../../img/6.png';
@@ -11,6 +11,11 @@ const missiionbanner = [
 ]
 
 function AboutUsMain() {
+
+    useEffect(() => {
+        document.title = 'About Us - Leading B2B Database Provider in India';
+    }, []);
+
     return (
         <div className="AboutUsMain">
             <div className="AboutUs-Heading">

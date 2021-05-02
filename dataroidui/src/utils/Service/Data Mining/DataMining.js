@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
+import React,{useEffect}  from 'react';
 import './DataMining.css';
 import Datammine from '../../../img/data-mining.png';
 
 function DataMining() {
+
+    useEffect(() => {
+        document.title = 'Data Mining - Leading B2B Database Provider in India';
+    },[]);
+
         return (
             <div className="datamining">
                 <div className="datamining-heading">
