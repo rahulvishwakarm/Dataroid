@@ -13,10 +13,16 @@
     margin-right: 75px;
 }
 
-.contactusform-form{
-    border: 1px solid red;
-}
-
 input{
     padding: 10px;
+}
+
+.submit-button{
+    border: 1px solid #6d6875;
+    padding: 6px 20px;
+    margin-left: 68px;
+}
+
+textarea{
+    resize: none;
 }

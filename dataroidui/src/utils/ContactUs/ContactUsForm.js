@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContactUsForm.css';
+import { Captcha } from 'reactjs-captcha';
 
 function ContactUsForm() {
     return (
@@ -31,6 +32,16 @@ function ContactUsForm() {
                         </div>
                         <div className="col-sm">
                             <input type="text" name="city" placeholder="Enter City*" size="55" />   
+                        </div>
+                    </div><br></br>
+                    <div className="row" style={{"margin-left":"180px","margin-right":"180px"}}>
+                        <div className="col-sm">
+                            <textarea rows="8" cols="130" name="message-text" placeholder="Type Message..." fixed/>
+                        </div>
+                    </div><br></br>
+                    <div className="row">
+                        <div className="col-4">
+                            <button className="submit-button"><b>Submit</b></button>
                         </div>
                     </div>
             </div>

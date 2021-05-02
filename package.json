@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build":"cd dataroidui && npm run build",
-    "install-dataroidui":"cd dataroidui && npm install",
-    "heroku-postbuild":"npm run install-dataroidui && npm run build",
+    "build": "cd dataroidui && npm run build",
+    "install-dataroidui": "cd dataroidui && npm install",
+    "heroku-postbuild": "npm run install-dataroidui && npm run build",
     "start": "node server.js",
     "dataroidui": "cd dataroidui && npm start",
-    "dev":"concurrently -n 'server,dataroidui' -c 'red,green'  \"nodemon server.js\" \"npm run dataroidui\""
+    "dev": "concurrently -n 'server,dataroidui' -c 'red,green'  \"nodemon server.js\" \"npm run dataroidui\""
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "crypto": "^1.0.1",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "reactjs-captcha": "^1.3.1"
   }
 }
