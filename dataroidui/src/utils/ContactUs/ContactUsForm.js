@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './ContactUsForm.css';
 import {useHistory} from 'react-router-dom';
-import Axios from 'axios';
+import {db} from '../../firebase';
 
 function ContactUsForm() {
     const history = useHistory();
@@ -21,34 +21,42 @@ function ContactUsForm() {
                         if(phone!="") {
                             if(city!="") {
                                 if(textArea!="") {
-                                    alert("Your query has been raised!! We will contact you soon!!")
                                     e.preventDefault();
                                     history.push('/ContactUs')
-                                    // Axios.post("http://localhost:5000/contactForm",
-                                    // {
-                                    //     ui_yourName:yourName,
-                                    //     ui_companyEmail:companyEmail,
-                                    //     ui_jobTitle:jobTitle,
-                                    //     ui_companyName:companyName,
-                                    //     ui_phone:phone,
-                                    //     ui_city:city,
-                                    //     ui_textArea:textArea,
-                                    // }).then((response)=> {
-                                    //     console.log(response)
-                                    // })
-                                    // console.log(yourName,companyEmail,jobTitle,companyName,phone,city,textArea);
-                                    window.location.reload(true);
+                                    //Sending Email
+                                    db.collection('contacts').add({
+                                        yourName:yourName,
+                                        companyEmail:companyEmail,
+                                        jobTitle:jobTitle,
+                                        companyName:companyName,
+                                        phone:phone,
+                                        city:city,
+                                        textArea:textArea
+                                    })
+                                    .then(()=>{
+                                        alert("Your query has been raised!! We will contact you soon!!")
+                                    })
+                                    .catch(error=>{
+                                        alert(error.message);
+                                    });
+                                    setyourName("");
+                                    setcompanyEmail("");
+                                    setjobTitle("");
+                                    setcompanyName("");
+                                    setPhone("");
+                                    setcity("");
+                                    settextArea("");
                                 }
                                 else {
                                     alert("Type some message..");
                                 }
                             }
                             else {
-                                alert("Please enyter your city!!")
+                                alert("Please enyter your city!!");
                             }
                         }
                         else {
-                            alert("Please enter phone number!!")
+                            alert("Please enter phone number!!");
                         }
                     } 
                     else {
