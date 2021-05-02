@@ -18,7 +18,7 @@ class Header extends React.Component {
                                 <button className="btn btn-dark" type="submit">Search</button>
                         </form> */}
                         <div className="navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-fitting">
                                 <li className="nav-item">
                                     <Link className="nav-link active" to="/">Home</Link>
                                 </li>
@@ -34,7 +34,7 @@ class Header extends React.Component {
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/">Services</Link>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><Link to="/b2bdatabase" style={{ textDecoration: 'none' }}><button className="dropdown-item" >B2B Database</button></Link></li>
+                                        <li><Link to="/b2bdatabase" style={{ textDecoration: 'none',"font-size":"large" }}><button className="dropdown-item" >B2B Database</button></Link></li>
                                         <li><Link to="/datamining" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Mining</button></Link></li>
                                         <li><Link to="/datawrangling" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Wrangling</button></Link></li>
                                         <li><Link to="/dataresearch" style={{ textDecoration: 'none' }}><button className="dropdown-item" >Data Research</button></Link></li>

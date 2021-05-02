@@ -27,3 +27,11 @@ Link:hover{
 .navbar-brand{
     margin-left: 30px;
 }
+
+.gap-fitting{
+    gap: 2em;
+}
+
+.gap-fitting li:hover{
+    background-color:#dee2e6;
+}

@@ -4,11 +4,14 @@
 
 .contact-number-email{
     display: flex;
-    
+    margin-left: 25%;
+    gap: 10px;
 }
 
 .contact-number ,.contact-email{
-    border: 1px solid black;
+    border: 1px solid #6d6875;
     text-align: center;
-    padding: 40px 80px;
+    padding: 20px 80px;
+    border-radius: 0.4em;
+    background-color: #e5e5e5;
 }

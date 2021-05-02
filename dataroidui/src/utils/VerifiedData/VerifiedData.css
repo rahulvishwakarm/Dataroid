@@ -10,13 +10,10 @@
 .row1-widget{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 6px;
     margin-left: 50px;
 }
 
-.row1-widget span {
-    padding-bottom: 20px;
-}
 
 .B2b-category-header{
     padding-top: 20px;

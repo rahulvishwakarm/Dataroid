@@ -3,10 +3,13 @@
     display: block;
     padding-left: 70px;
     padding-right: 65px;
-    padding-top: 15px;
+    padding-top: 6px;
     padding-bottom: 15px;
     flex: 1 0 20%;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .list-editing{
@@ -14,7 +17,7 @@
 }
 
 .widget-catgeory-list {
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 .spacing-database {
