@@ -50,11 +50,11 @@ function FooterPage() {
                               <div className="footer-socialmedia">
                                 <p>Follow Us On</p>
                                 <div className="social-icons">
-                                    <span><FacebookIcon style={{'color':'#4267B2'}}/></span>
-                                    <span><InstagramIcon style={{'color':'#C13584'}}/></span>
-                                    <span><YouTubeIcon style={{'color':'#FF0000'}}/></span>
-                                    <span><TwitterIcon style={{'color':'#1DA1F2'}}/></span>
-                                    <span><LinkedInIcon style={{'color':'#0077b5'}}/></span>
+                                    <Link to={{  pathname: "https://facebook.com" }}  target={"_blank"} ><span><FacebookIcon style={{'color':'#4267B2'}}/></span></Link>
+                                    <Link to={{  pathname: "https://instagram.com" }}  target={"_blank"} ><span><InstagramIcon style={{'color':'#C13584'}}/></span></Link>
+                                    <Link to={{  pathname: "https://youtube.com" }}  target={"_blank"} ><span><YouTubeIcon style={{'color':'#FF0000'}}/></span></Link>
+                                    <Link to={{  pathname: "https://twitter.com" }} target={"_blank"} ><span><TwitterIcon style={{'color':'#1DA1F2'}}/></span></Link>
+                                    <Link to={{  pathname: "https://linkedIn.com" }}  target={"_blank"} ><span><LinkedInIcon style={{'color':'#0077b5'}}/></span></Link>
                                 </div>
                               </div>
                           </ul>
